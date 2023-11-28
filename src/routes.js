@@ -1,20 +1,26 @@
 import express from "express";
 
-import { home_page, import_data } from "./controllers/home-controller.js";
-import { aggregate_page } from "./controllers/aggregate-controller.js";
-import { bar_chart_page } from "./controllers/bar-chart-controller.js";
-import { scatter_plot_page } from "./controllers/scatter-plot-controller.js";
+import { home_page } from "./controllers/home-controller.js";
+import { login_page } from "./controllers/login-controller.js";
+import { trial_result_page } from "./controllers/trial-result-controller.js";
+import { trial_schedule_page } from "./controllers/trial-schedule-controller.js";
+import { trial_schedule_management_page } from "./controllers/trial-schedule-management-controller.js";
+import { trial_schedule_overview_page } from "./controllers/trial-schedule-overview-controller.js";
+import { user_management_page } from "./controllers/user-management-controller.js";
+import { bap_attachment_page } from "./controllers/bap-attachment-controller.js";
 
 const router = express.Router();
 
 // Get routes
 router.get("/", home_page);
-router.get("/aggregate", aggregate_page);
-router.get("/bar-chart", bar_chart_page);
-router.get("/scatter-plot", scatter_plot_page);
+router.get("/login", login_page);
+router.get("/trial-result", trial_result_page);
+router.get("/trial-schedule", trial_schedule_page);
+router.get("/trial-schedule-management", trial_schedule_management_page);
+router.get("/trial-schedule-overview", trial_schedule_overview_page);
+router.get("/user-management", user_management_page);
+router.get("/bap-attachment", bap_attachment_page);
 
 // Post routes
-router.post("/", import_data);
-
 
 export default router;
