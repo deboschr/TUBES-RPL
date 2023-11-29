@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/trial-result-overview-style.css" />
+		<link rel="stylesheet" href="globals.css" />
+		<title>Trial Result Overview</title>
+	</head>
+	<body>
+		<div class="dosen-hasil-sidang">
+			<div class="div">
+				<div class="overlap"><div class="text-wrapper">Hasil Sidang</div></div>
+				<div class="search-container">
+					<form action="#">
+						<input type="text" placeholder="Search..." name="search" />
+						<button type="submit">Search</button>
+					</form>
+				</div>
+				<div class="overlap-group">
+					<div class="overlap-2">
+						<div class="text-wrapper-2">Judul Skripsi</div>
+						<!-- Tambahkan tautan edit ke halaman pengeditan -->
+						<a href="/trial-result" class="edit-link">Edit</a>
+					</div>
+					<img class="image" src="img/image-6.png" />
+					<div class="text-wrapper-3" onclick="showPopup()">Nama Mahasiswa</div>
+				</div>
+
+				<div id="popup" class="popup">
+					<div class="popup-content">
+						<span class="close" onclick="closePopup()">&times;</span>
+						<h2>Nilai Sidang</h2>
+						<p id="nilaiSidang"></p>
+						<h2>Catatan Sidang</h2>
+						<p id="catatanSidang"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="js/trial-result-overview-script.js"></script>
+	</body>
+</html>
