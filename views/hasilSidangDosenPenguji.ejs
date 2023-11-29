@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="../public/css/hasilSidangDosenPenguji.css" />
+  </head>
+  <body>
+    <div class="dosen-hasil-sidang">
+      <div class="div">
+        <div class="overlap"><div class="text-wrapper">Hasil Sidang</div></div>
+        <div class="search-container">
+          <form action="#">
+            <input type="text" placeholder="Search..." name="search">
+            <button type="submit">Search</button>
+          </form>
+        </div>
+        <div class="overlap-group">
+          <div class="overlap-2">
+            <div class="text-wrapper-2">Judul Skripsi</div>
+            <!-- Tambahkan tautan edit ke halaman pengeditan -->
+            <a href="#" class="edit-link">Edit</a>
+          </div>
+          <img class="image" src="img/image-6.png" />
+          <div class="text-wrapper-3" onclick="showPopup()">Nama Mahasiswa</div>
+        </div>
+        
+        
+        <div id="popup" class="popup">
+          <div class="popup-content">
+            <span class="close" onclick="closePopup()">&times;</span>
+            <h2>Nilai Sidang</h2>
+            <p id="nilaiSidang"></p>
+            <h2>Catatan Sidang</h2>
+            <p id="catatanSidang"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      function showPopup() {
+        document.getElementById("popup").style.display = "block";
+        // Di sini kamu bisa menambahkan logika untuk mengambil catatan sidang dan nilai sidang dari database atau sumber lainnya
+        // Contoh:
+        let catatanSidang = "Catatan sidang mahasiswa...";
+        let nilaiSidang = "Nilai sidang mahasiswa...";
+        document.getElementById("catatanSidang").innerHTML = catatanSidang;
+        document.getElementById("nilaiSidang").innerHTML = nilaiSidang;
+      }
+
+      function closePopup() {
+        document.getElementById("popup").style.display = "none";
+      }
+    </script>
+  </body>
+</html>
