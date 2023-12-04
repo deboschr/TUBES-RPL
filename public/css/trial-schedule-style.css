@@ -1,0 +1,32 @@
+body{
+    width: 100vw;
+    height: 100vh;
+    background-color: greenyellow;
+}
+.top{
+    background-color: aqua;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10vh;
+}
+.bottom{
+    margin-top: 4vh;
+    width: 95vw;
+
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    height: 85vh;
+}
+.option{
+    margin-top: 3vh;
+    background-color: gray;
+    display: flex;
+    justify-content: space-between;
+    height: 10vh;
+}
+.jadwal{
+    background-color: lightcoral;
+    height: 70vh;
+}
