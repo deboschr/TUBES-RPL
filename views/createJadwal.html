@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/public/css/createJadwal.css" />
+    <title>Buat Jadwal</title>
+  </head>
+  <body>
+    <div class="container">
+        <div class="title">
+            <div class="menu">
+                <button>Menu</button>
+            </div>
+            <div class="namaHalaman">
+                <h2>Buat Jadwal</h2>
+            </div>
+        </div>
+        <div class="form-wrapper">
+            <div class="form">
+                <form action="/submit_form" method="post">
+                    <label for="tanggal">Tanggal:</label>
+                    <input type="date" id="tanggal" name="tanggal" required>
+                    <label for="waktu">Waktu:</label>
+                    <input type="time" id="waktu" name="waktu" required>
+                    <label for="nama">Nama:</label>
+                    <input type="text" id="nama" name="nama" required>
+                    <label for="npm">NPM:</label>
+                    <input type="text" id="npm" name="npm" required>
+                    <label for="noRuang">Nomor Ruang:</label>
+                    <input type="text" id="no Ruang" name="noRuang" required>
+                    <label for="dosenPembimbing">Dosen Pembimbing:</label>
+                    <input type="text" id="dosenPembimbing" name="dosenPembimbing" required>
+                    <label for="dosenPenguji">Dosen Penguji:</label>
+                    <input type="text" id="dosenPenguji" name="dosenPenguji" required>
+                    <input type="submit" value="SAVE">
+                </form>
+            </div>
+        </div>
+    </div>
+  </body>
+</html>
