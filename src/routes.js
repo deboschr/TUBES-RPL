@@ -14,6 +14,7 @@ const router = express.Router();
 
 // Get routes
 router.get("/", home_page);
+router.get("/home", home_page);
 router.get("/login", login_page);
 router.get("/trial-result", trial_result_page);
 router.get("/trial-result-overview", trial_result_overview_page);
