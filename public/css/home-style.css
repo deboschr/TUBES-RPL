@@ -5,72 +5,22 @@
 	width: 100%;
 	height: 100%;
 }
-.Header {
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	height: 200px;
-	background-color: blue;
-}
-p[class="p"] {
-	display: flex;
-	top: 100px;
-	left: 150px;
-	font-family: "Inter-Regular", Helvetica;
-	font-weight: 400;
-	color: #ffffff;
-	font-size: 90px;
-	letter-spacing: 0;
-	line-height: normal;
-}
-
-button[class="Tombol back"] {
-	display: flex;
-	top: 50px;
-	left: 65%;
-	width: 50px;
-	height: 50px;
-	border-radius: 24px;
-	background-color: white;
-}
-img[class="Gambar Tombol"] {
-	bottom: 1px;
-	right: 1px;
-	width: 50px;
-	height: 50px;
-}
-.Header2 {
-	top: 25px;
-	display: flex;
-	flex-direction: row;
-	width: 100%;
-	height: 50px;
-	background-color: blue;
-	font-family: "Inter-Regular", Helvetica;
-	font-weight: 400;
-	color: #ffffff;
-	font-size: 25px;
-	justify-content: center;
-}
-
-.text-wrapper-3 {
-	top: 10px;
-}
-
 .button {
 	display: flex;
-	top: 50px;
+	position: relative;
+	top: 300px;
 	flex-direction: row;
 	justify-content: flex-start;
 }
 
-button[class="Jadwal Sidang"] {
+a[class="Jadwal Sidang"] {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	left: 20%;
-	background-color: blue;
+	left: 10%;
+	background-color: #046666;
 	font-family: "Inter-Regular", Helvetica;
 	font-weight: 400;
 	color: #ffffff;
@@ -84,13 +34,14 @@ button[class="Jadwal Sidang"] {
 	height: 150px;
 }
 
-button[class="Hasil Sidang"] {
+a[class="Hasil Sidang"] {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	left: 25%;
-	background-color: blue;
+	left: 15%;
+	background-color: #046666;
 	font-family: "Inter-Regular", Helvetica;
 	font-weight: 400;
 	color: #ffffff;
@@ -103,13 +54,15 @@ button[class="Hasil Sidang"] {
 	width: 150px;
 	height: 150px;
 }
-button[class="BAP"] {
+
+a[class="UserManagement"] {
 	display: flex;
+	position: relative;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	left: 30%;
-	background-color: blue;
+	left: 20%;
+	background-color: #046666;
 	font-family: "Inter-Regular", Helvetica;
 	font-weight: 400;
 	color: #ffffff;
@@ -119,6 +72,29 @@ button[class="BAP"] {
 	border-radius: 20px;
 }
 .Gambar3 {
+	width: 150px;
+	height: 150px;
+}
+
+
+a[class="ScheduleManagement"] {
+	display: flex;
+	position: relative;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	left: 25%;
+	background-color: #046666;
+	font-family: "Inter-Regular", Helvetica;
+	font-weight: 400;
+	color: #ffffff;
+	font-size: 25px;
+	width: 250px;
+	height: 250px;
+	border-radius: 20px;
+}
+.Gambar4 {
 	width: 150px;
 	height: 150px;
 }

@@ -10,7 +10,11 @@
 	scroll-behavior: smooth;
 	font-family: "Poppins", sans-serif;
 }
+body{
+	background-image: url(../img/background/3.jpg);
+	background-size: cover;
 
+}
 html {
 	font-size: 62.5%;
 	overflow-x: hidden;
