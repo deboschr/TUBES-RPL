@@ -1,35 +1,39 @@
-<!DOCTYPE html>
-<html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="/public/css/user-management-style.css">
-		<title>User Management</title>
-	</head>
-	<body>
-		<!DOCTYPE html>
-<html lang="en">
-<body>
-    <div class="container">
-        <div class="title">
-            <div class="menu">
-                <button>Menu</button>
-            </div>
-            <div class="namaHalaman">
-                <h2>Data Sidang</h2>
-            </div>
+<div class="container">
+  <div class="menambah-data">
+    <button id="openPopupButton">Tambah Data</button>
+    <div id="popupContainer">
+      <div class="popupContent">
+        <span class="close" onclick="closePopup()">&times;</span>
+        <h2>Pilih data yang ingin di input</h2>
+        <div class="popup-pilihan">
+          <ul>
+            <button>Mahasiswa</button>
+           <!--- <a href="another-page.html"><button>Go to Another Page</button></a> -->
+          </ul>
+          <ul>
+            <button>Dosen Penguji</button>
+          </ul>
+          <ul>
+            <button>Dosen Pembimbing</button>
+          </ul>
         </div>
-        <div class="data-sidang">
-            <div class="tambah-data">
-                <button><b>+</b></b></button>
-            </div>
-            <div class="data">
-                <h1>data</h1>
-            </div>
-        </div>
+      </div>
     </div>
-</body>
-</html>
-		<script src="js/user-management-script.js"></script>
-	</body>
-</html>
+    <script>
+      document
+        .getElementById("openPopupButton")
+        .addEventListener("click", openPopup);
+
+      function openPopup() {
+        document.getElementById("popupContainer").style.display = "block";
+      }
+
+      function closePopup() {
+        document.getElementById("popupContainer").style.display = "none";
+      }
+    </script>
+  </div>
+  <div class="list-data">
+    <h1>list data</h1>
+  </div>
+</div>

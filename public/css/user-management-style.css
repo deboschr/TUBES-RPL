@@ -1,38 +1,45 @@
-body{
-    background-color: grey;
-    height: 100vh;
-    width: 100vw;
-    display: flex;
-    flex-direction: column;
-    align-items:flex-start;
-}
+
 .container{
+    background-color: grey;
+    width: 90vw;
+    height: 80vh;
+    margin-top: 2%;
+   margin-left: 5%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+   align-items: center;
+
 }
-.title{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100vw;
-    margin-top: -10px;
-    margin-left: -10px;
-    padding:10px;
-    background-color: #000AFF;
-    color: white;
+.menambah-data{
+    background-color: bisque;
+    width: 60vw;
+    height: 60vh;
 }
-.menu{
-margin-right: 5%;
-}
-.namaHalaman{
-    margin-right: 45%;
-}
-.data-sidang{
-    margin-top: 5%;
-    height: 70vh;
-    background-color: white;
-    width: 80vw;
-    display: flex;
-    
-}
+#popupContainer {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+  }
+  
+  .popupContent {
+    background-color: #fff;
+    margin: 10% auto;
+    padding: 20px;
+    width: 60%;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  
