@@ -3,7 +3,7 @@ run-name: Running ESLint agaisy source code
 on: [push]
 jobs:
   run-eslint:
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
       - uses: action/setup-node@v3
