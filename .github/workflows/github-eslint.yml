@@ -1,13 +1,20 @@
 name: github-eslint
-run-name: Running ESLint agaisy source code
-on: [push]
+on:
+  push:
+    branches:
+      - master
+
 jobs:
   run-eslint:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v3
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          node-version: '20'
-      - run: npm install
-      - run: npx eslint src/*.js
+          node-version: '14'
+
+      - name: Run ESLint
+        run: npx eslint src/*.js
