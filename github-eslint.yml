@@ -9,5 +9,5 @@ jobs:
       - uses: action/setup-node@v3
         with:
           node-version: '20'
-      - run: npm install
+      - run: npm start
       - run: npx eslint *.js
