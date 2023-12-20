@@ -8,7 +8,7 @@
 .button {
 	display: flex;
 	position: relative;
-	top: 300px;
+	top: 200px;
 	flex-direction: row;
 	justify-content: flex-start;
 }
@@ -75,7 +75,6 @@ a[class="UserManagement"] {
 	width: 150px;
 	height: 150px;
 }
-
 
 a[class="ScheduleManagement"] {
 	display: flex;

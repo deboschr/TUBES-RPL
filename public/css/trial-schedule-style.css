@@ -1,3 +1,6 @@
+div[class="trial-schedule-overview"]{
+    margin-top:30px
+}
 div[class="div"]{
     display: flex;
     align-items: center;
@@ -8,7 +11,6 @@ table[class="schedule1"],th,td{
     font-size: medium;
     background-color: white;
     text-align: center;
-    margin-top: 25px;
 }
 th{
     height: 70px;

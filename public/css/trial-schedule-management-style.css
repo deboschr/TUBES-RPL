@@ -1,3 +1,6 @@
+div[class="trial-schedule-overview"]{
+    margin-top:30px
+}
 div[class="div"]{
     display: flex;
     align-items: center;
