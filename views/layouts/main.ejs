@@ -3,26 +3,46 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="stylesheet" href="css/main-style.css" />
-		<link rel="stylesheet" href="css/<%= style %>" />
+		<link
+			href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+			rel="stylesheet" />
+		<link rel="stylesheet" href="css/layouts-style/main-style.css" />
+		<link rel="stylesheet" href="css/pages-style/<%= assets.page_style %>" />
+		<% if (assets.layout_style) { %>
+		<link
+			rel="stylesheet"
+			href="css/layouts-style/<%= assets.layout_style %>" />
+		<% } %>
 		<title><%= title %></title>
 	</head>
 	<body>
-		<header class="header">
-			<a href="/home" class="logo">
-				<img src="img/logo-unpar.png" alt="Logo" />
-			</a>
-			<h3><%= title %></h3>
-			<div class="profile-picture">
-				<img src="img/profile-pictures/my-image.jpeg" alt="Profile Picture" />
+		<div class="main-container">
+			<div class="navbar-container">
+				<header class="header">
+					<a href="/" class="logo">
+						<img src="img/logo-unpar.png" alt="Logo" />
+						<div class="logo-text">JADWAL SIDANG SKRIPSI UNPAR</div>
+					</a>
+					<h3><%= title %></h3>
+				</header>
 			</div>
-			<a href="/profile" class="profile-picture">
-				<img src="img/profile-pictures/my-image.jpeg" alt="profile" />
-			</a>
-		</header>
+			<div class="content-container"><%- body %></div>
+		</div>
 
-		<div class="content-page"><%- body %></div>
-		<script src="js/<%= script %>"></script>
-		<script src="js/main-script.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+		<script
+			type="module"
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+		<script
+			nomodule
+			src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+		<script
+			type="module"
+			src="js/pages-script/<%= assets.page_script %>"></script>
+		<% if (assets.layout_script) { %>
+		<script
+			type="module"
+			src="js/layouts-script/<%= assets.layout_script %>"></script>
+		<% } %>
 	</body>
 </html>
