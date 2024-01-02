@@ -1,9 +1,22 @@
-export const home_page = (req, res) => {
-	res.render("home", {
-		title: "Home",
-		layout: "layouts/main",
-		style: "home-style.css",
-		script: "home-script.js",
-		data_user: "ini data user",
-	});
+export const home_page = async (req, res) => {
+	try {
+		const dataUser = {
+			role: "coordinator",
+			kekuatan: "menggunakan ChatGPT",
+		};
+
+		const assets = {
+			page_style: "home-style.css",
+			page_script: "home-script.js",
+		};
+
+		res.render("home-page", {
+			title: "Home",
+			layout: "layouts/main",
+			assets: assets,
+			dataUser: dataUser,
+		});
+	} catch (error) {
+		console.log(error);
+	}
 };
