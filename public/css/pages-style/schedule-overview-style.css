@@ -1,0 +1,226 @@
+.smo-container {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+	padding: 0 30px 10px;
+}
+
+/* ########################################## */
+/* STYLE FOR HEAD */
+
+.smo-container .smo-header {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 100%;
+	height: 40px;
+	margin: 10px;
+	justify-content: center;
+	align-items: center;
+}
+
+/* ##################### */
+/* STYLE FOR FILTER BOX */
+
+.box-filter {
+	display: flex;
+	margin-right: 10px;
+	height: 30px;
+	align-items: center;
+}
+
+.box-filter label {
+	width: 100px;
+	font-size: 15px;
+	font-weight: 500;
+	color: rgb(58, 58, 58);
+	margin-right: 5px;
+	text-align: right;
+}
+
+.box-filter select {
+	width: 180px;
+	height: 100%;
+	padding-left: 10px;
+	border: none;
+	border-radius: 30px;
+	background: whitesmoke;
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
+/* ##################### */
+/* STYLE FOR MIDDLE BOX */
+.smo-header .box-middle {
+	display: flex;
+	width: 100%;
+	justify-content: center;
+}
+
+.box-middle .box-search {
+	display: flex;
+	height: 35px;
+	border-radius: 30px;
+	background: whitesmoke;
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
+	padding-left: 8px;
+	padding-right: 8px;
+	text-align: center;
+	justify-content: center;
+}
+
+.box-search input {
+	height: 100%;
+	width: 80px;
+	outline: none;
+	border: none;
+	font-size: 15px;
+	font-weight: 500;
+	transition: 0.8s;
+	background: transparent;
+	color: rgb(58, 58, 58);
+	text-decoration: none;
+}
+
+.box-search:hover input {
+	width: 400px;
+}
+
+.box-search i {
+	font-size: 20px;
+	font-weight: 600;
+	line-height: 1.8;
+	height: 30px;
+	color: #046666;
+}
+
+/* ##################### */
+/* STYLE FOR RIGHT BOX */
+.smo-header .box-right {
+	display: flex;
+	width: 100%;
+	justify-content: right;
+	cursor: default;
+}
+
+.box-right .btn-add-user {
+	width: 40px;
+	height: 35px;
+	text-align: center;
+	border-radius: 5px;
+	color: rgb(58, 58, 58);
+	background: rgb(173, 173, 173);
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	user-select: none;
+}
+
+.box-right .btn-add-user:hover,
+.box-right .btn-add-user:focus {
+	color: whitesmoke;
+	background: #046666;
+}
+
+.btn-add-user i {
+	line-height: 1.5;
+	padding-left: 3px;
+	font-size: 27px;
+	/* font-weight: 500; */
+}
+
+/* ########################################## */
+/* STYLE FOR BODY - TABLE */
+
+.smo-container .smo-body {
+	flex-grow: 1;
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: 100%;
+	overflow-y: auto;
+	margin-top: 20px;
+}
+
+.smo-body table {
+	width: 100%;
+	table-layout: fixed;
+	border-collapse: collapse;
+}
+
+.smo-body table thead {
+	border: 3px solid #046666;
+}
+
+thead tr th {
+	color: rgb(58, 58, 58);
+	font-weight: 600;
+}
+
+thead tr th:nth-child(1),
+thead tr th:nth-child(2),
+thead tr th:nth-child(3),
+thead tr th:nth-child(4) {
+	text-align: left;
+}
+
+thead tr th:nth-child(1),
+tbody tr td:nth-child(1) {
+	padding-left: 50px;
+}
+
+.smo-body table tbody {
+	border: 3px solid #046666;
+}
+
+tbody tr td {
+	height: 40px;
+	cursor: pointer;
+}
+
+tbody tr:hover {
+	color: whitesmoke;
+	background: #046666;
+}
+
+tbody tr td:nth-child(5) {
+	text-align: center;
+}
+
+/* Center the content in the action cell */
+tbody tr td:nth-child(5).center-content {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	user-select: none;
+}
+
+tbody tr td .btn-detail,
+tbody tr td .btn-delete {
+	width: 35px;
+	height: 30px;
+	font-weight: 500;
+	border: none;
+	border-radius: 5px;
+	color: rgb(58, 58, 58);
+	background: rgb(173, 173, 173);
+	box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.3);
+	cursor: pointer;
+	margin: 0 10px 0;
+}
+
+tbody tr td .btn-detail i,
+tbody tr td .btn-delete i {
+	line-height: 1.6;
+	font-size: 20px;
+}
+
+tbody tr td .btn-detail:hover {
+	color: whitesmoke;
+	background: #4287be;
+}
+
+tbody tr td .btn-delete:hover {
+	color: whitesmoke;
+	background: #be4242;
+}
