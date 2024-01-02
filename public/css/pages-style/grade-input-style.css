@@ -1,0 +1,90 @@
+.gd-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.dg-head {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.field {
+	display: flex;
+}
+
+.field .label {
+	width: 150px;
+	/* background: salmon; */
+	font-weight: 500;
+}
+
+.field .text {
+	margin-right: auto;
+}
+/* STYLE FOR BODY */
+
+.gd-body {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 20px;
+}
+
+.gd-body form {
+	display: flex;
+	flex-direction: column;
+	border: 3px solid #fff;
+	border-radius: 10px;
+	justify-content: center;
+	align-items: center;
+	background: #046666;
+}
+
+form .box-input {
+	/* border-radius: 10px; */
+	padding: 10px;
+}
+
+.box-input .field {
+	height: 30px;
+	width: 600px;
+	margin-top: 5px;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+}
+
+.field label {
+	/* margin: 0 10px 0; */
+	color: whitesmoke;
+	font-weight: 500;
+}
+
+.field input {
+	border: none;
+	background: whitesmoke;
+	box-shadow: inset 0 2px 3px rgba(0, 0, 0, 0.3);
+	padding: 0 10px 0;
+	border-radius: 5px;
+}
+
+#btn-submit {
+	margin: 10px 0 10px;
+	width: 100px;
+	background: whitesmoke;
+	border: 2px solid #046666;
+	border-radius: 5px;
+	height: 30px;
+	color: rgb(78, 78, 78);
+	font-weight: 600;
+	user-select: none;
+	cursor: pointer;
+}
+
+#btn-submit:hover {
+	background: #1186ca;
+	color: whitesmoke;
+}

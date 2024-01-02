@@ -1,0 +1,76 @@
+.usd-container {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.dg-head {
+	display: flex;
+	width: 100%;
+	margin-top: 20px;
+}
+
+.field {
+	display: flex;
+}
+
+.field .label {
+	width: 150px;
+	/* background: salmon; */
+	font-weight: 500;
+}
+
+.field .text {
+	margin-right: auto;
+}
+
+.btn-input {
+	border: 2px solid #046666;
+	border-radius: 5px;
+	padding: 0 5px 0;
+	margin-top: auto;
+	margin-left: auto;
+	font-weight: 500;
+	user-select: none;
+	cursor: pointer;
+}
+
+.btn-input:hover {
+	background: #046666;
+	color: whitesmoke;
+}
+
+table {
+	table-layout: fixed;
+	border-collapse: collapse;
+	border: 2px solid #046666;
+	margin-top: 20px;
+}
+
+thead tr th {
+	width: 200px;
+	background: #046666;
+	font-weight: 600;
+	border: 1px solid #161f1f;
+	padding: 8px;
+}
+
+thead tr th:nth-child(1) {
+	padding-left: 10px;
+	text-align: left;
+}
+
+tbody tr td {
+	text-align: center;
+	border: 1px solid #046666;
+	padding: 8px;
+}
+
+tbody tr td:nth-child(1) {
+	text-align: left;
+	padding-left: 10px;
+}
+tbody tr:nth-child(5) td:nth-child(1) {
+	text-align: center;
+}
