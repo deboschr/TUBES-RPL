@@ -1,0 +1,75 @@
+<div class="gd-container">
+	<!-- <div class="dg-head">
+		<div class="box-field">
+			<div class="field">
+				<div class="label">Topik Skripsi</div>
+				<div class="text">XXXXXXXXXXXXXXX XXXXXXXX XXXXXXXX XXXXXXX</div>
+			</div>
+			<div class="field">
+				<div class="label">Fase Sidang</div>
+				<div class="text">XXXXXXXXXXXXXXXX</div>
+			</div>
+			<div class="field">
+				<div class="label">Mahasiswa</div>
+				<div class="text">XXXXXXXXXXXXXXXX</div>
+			</div>
+		</div>
+	</div> -->
+	<div class="gd-body">
+		<form action="/grade-detail" method="post">
+			<div class="box-input">
+				<div class="field">
+					<label for="capaian-materi">Capaian Materi</label>
+					<input
+						type="number"
+						step="0.01"
+						min="0"
+						max="100"
+						name="capaian_materi"
+						id="capaian-materi" />
+				</div>
+				<div class="field">
+					<label for="penguasaan-materi">Penguasaan Materi</label>
+					<input
+						type="number"
+						step="0.01"
+						min="0"
+						max="100"
+						name="penguasaan_materi"
+						id="penguasaan-materi" />
+				</div>
+				<div class="field">
+					<label for="proses-bimbingan">Proses Bimbingan</label>
+					<input
+						type="number"
+						step="0.01"
+						min="0"
+						max="100"
+						name="proses_bimbingan"
+						id="proses-bimbingan" />
+				</div>
+				<div class="field">
+					<label for="presentasi">Presentasi</label>
+					<input
+						type="number"
+						step="0.01"
+						min="0"
+						max="100"
+						name="presentasi"
+						id="presentasi" />
+				</div>
+				<div class="field">
+					<label for="kedisiplinan">Kedisiplinan</label>
+					<input
+						type="number"
+						step="0.01"
+						min="0"
+						max="100"
+						name="kedisiplinan"
+						id="kedisiplinan" />
+				</div>
+			</div>
+			<input type="submit" class="btn-submit" id="btn-submit" />
+		</form>
+	</div>
+</div>
