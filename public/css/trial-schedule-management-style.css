@@ -1,0 +1,49 @@
+@import '../../node_modules/bootstrap/dist/css/bootstrap-grid.min.css';
+div[class="trial-schedule-overview"]{
+    margin-top:30px
+}
+div[class="table-responsive"]{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+table[class="schedule1"],th,td{
+    border: 1px solid;
+    font-size: medium;
+    background-color: white;
+    text-align: center;
+}
+th{
+    height: 70px;
+    margin: 10px;
+}
+td{
+    width : 200px
+}
+table.dataTable thead .sorting:after,
+table.dataTable thead .sorting:before,
+table.dataTable thead .sorting_asc:after,
+table.dataTable thead .sorting_asc:before,
+table.dataTable thead .sorting_asc_disabled:after,
+table.dataTable thead .sorting_asc_disabled:before,
+table.dataTable thead .sorting_desc:after,
+table.dataTable thead .sorting_desc:before,
+table.dataTable thead .sorting_desc_disabled:after,
+table.dataTable thead .sorting_desc_disabled:before {
+bottom: .5em;
+}
+.add{
+    display: flex;
+    position: relative;
+    left: 1322px;
+    height: 50px;
+    width: 50px;
+    background-color: #04AA6D;
+    border: none;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: xx-large;  
+    border-radius: 10px;
+}
