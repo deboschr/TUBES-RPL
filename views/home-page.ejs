@@ -1,0 +1,45 @@
+<div class="card-container">
+	<div id="schedule" class="card-box">
+		<a href="/schedule-overview" id="link-schedule">
+			<div class="card-title">Jadwal</div>
+			<div class="card-icon">
+				<img src="img/icon/schedule.png" />
+			</div>
+		</a>
+	</div>
+	<div id="grade" class="card-box">
+		<a href="/grade-overview" id="link-grade">
+			<div class="card-title">Nilai</div>
+			<div class="card-icon">
+				<img src="img/icon/grade.png" />
+			</div>
+		</a>
+	</div>
+	<div id="bap" class="card-box">
+		<a href="/bap" id="link-bap">
+			<div class="card-title">BAP</div>
+			<div class="card-icon">
+				<img src="img/icon/bap.png" />
+			</div>
+		</a>
+	</div>
+	<% if (dataUser.role === "coordinator") { %>
+	<div id="user-management" class="card-box">
+		<a href="/user-management-overview" id="link-use-management">
+			<div class="card-title">Manajemen Pengguna</div>
+			<div class="card-icon">
+				<img src="img/icon/user-management.png" />
+			</div>
+		</a>
+	</div>
+	<div id="schedule-management" class="card-box">
+		<a href="schedule-management-overview" id="link-schedule-management">
+			<div class="card-title">Manajemen Jadwal</div>
+			<div class="card-icon">
+				<img src="img/icon/schedule-management.png" />
+			</div>
+		</a>
+	</div>
+	<% } %>
+</div>
+<div class="get-data-user" data-user="<%= JSON.stringify(dataUser) %>"></div>

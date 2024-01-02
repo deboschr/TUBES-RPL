@@ -1,0 +1,55 @@
+.card-container {
+	width: 100%;
+	height: 100%;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 30px;
+	overflow-y: auto;
+}
+
+.card-box {
+	width: 250px;
+	height: 250px;
+	background: #a5a7a7;
+	margin: 10px;
+	padding: 10px;
+	border: 5px solid #046666;
+	border-radius: 20px;
+	display: flex;
+	flex-direction: column;
+}
+
+.card-box a {
+	text-decoration: none;
+}
+.card-box a .card-title {
+	height: 50px;
+	padding: 10px;
+	margin-bottom: 10px;
+	font-weight: 500;
+	font-size: 16px;
+	border-radius: 10px;
+	text-align: center;
+	color: rgb(217, 212, 212);
+	background: #046666;
+}
+.card-box a .card-icon {
+	display: flex;
+	height: 100%;
+	flex-grow: 1;
+	justify-content: center;
+	align-items: center;
+}
+
+.card-icon img {
+	width: 100px;
+	height: auto;
+	transition: transform 0.3s ease; /* Animasi perubahan ukuran */
+}
+
+.card-box a:hover .card-icon img {
+	transform: scale(1.1); /* Memperbesar gambar sebesar 10% */
+}
