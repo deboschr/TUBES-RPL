@@ -1,8 +1,9 @@
 import { Sequelize } from "sequelize";
 
-const sequelize = new Sequelize("tubes_rpl", "root", "", {
+const sequelize = new Sequelize("tubes_rpl_v1", "root", "", {
 	host: "localhost",
 	dialect: "mysql",
+	logging: false,
 });
 
 // Coba koneksi ke database
@@ -15,4 +16,4 @@ const sequelize = new Sequelize("tubes_rpl", "root", "", {
 	}
 })();
 
-export default sequelize;
+export { sequelize };
