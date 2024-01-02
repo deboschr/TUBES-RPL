@@ -1,7 +1,7 @@
 {
-	"name": "tubes-rpl",
+	"name": "debo-tubes-rpl",
 	"version": "1.0.0",
-	"description": "Tugas besar RPL membuat website untuk jadwal sidang skripsi",
+	"description": "",
 	"main": "index.js",
 	"type": "module",
 	"scripts": {
@@ -14,13 +14,11 @@
 		"ejs": "^3.1.9",
 		"express": "^4.18.2",
 		"express-ejs-layouts": "^2.5.1",
+		"express-layouts": "^1.0.0",
 		"express-session": "^1.17.3",
 		"mysql2": "^3.6.5",
-		"nodemon": "^3.0.1",
+		"nodemon": "^3.0.2",
 		"path": "^0.12.7",
 		"sequelize": "^6.35.1"
-	},
-	"devDependencies": {
-		"eslint": "^8.55.0"
 	}
 }
