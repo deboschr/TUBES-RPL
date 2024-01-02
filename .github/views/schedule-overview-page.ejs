@@ -1,0 +1,44 @@
+<div class="data-schedule" data-query="<%= scheduleData %>"></div>
+<div class="smo-container">
+	<div class="smo-header">
+		<div class="box-filter">
+			<label for="filter-schedule">Schedule</label>
+			<select name="filter_schedule" id="filter-schedule">
+				<option value="all">All</option>
+				<option value="coming" selected>Coming</option>
+				<option value="done">Done</option>
+			</select>
+		</div>
+		<div class="box-filter">
+			<label for="filter-thesis-phase">Thesis Phase</label>
+			<select name="filter_thesis_phase" id="filter-thesis-phase">
+				<option value="all" selected>All</option>
+				<option value="thesis1">Thesis 1</option>
+				<option value="thesis2">Thesis 2</option>
+			</select>
+		</div>
+		<div class="box-filter">
+			<label for="filter-role">Role</label>
+			<select name="filter_role" id="filter-role">
+				<option value="all" selected>All</option>
+				<option value="thesis1">Coordinator</option>
+				<option value="thesis2">Examiner</option>
+				<option value="thesis2">Supervisor</option>
+			</select>
+		</div>
+	</div>
+	<div class="smo-body">
+		<table class="table">
+			<thead id="table-head">
+				<tr>
+					<th id="thead-th1">Date</th>
+					<th id="thead-th2">Time</th>
+					<th id="thead-th3">Thesis Phase</th>
+					<th id="thead-th4">Role</th>
+					<th id="thead-th5">Student Names</th>
+				</tr>
+			</thead>
+			<tbody id="table-body"></tbody>
+		</table>
+	</div>
+</div>
